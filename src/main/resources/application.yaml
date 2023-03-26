@@ -12,6 +12,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+#   https://www.baeldung.com/hibernate-field-naming-spring-boot
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
     show-sql: true
     properties:
       hibernate:
