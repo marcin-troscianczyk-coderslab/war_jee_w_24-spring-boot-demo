@@ -5,6 +5,8 @@
     <title>All books</title>
 </head>
 <body>
+<jsp:include page="../header.jsp"/>
+<h3>All books</h3>
 
 <table>
     <tr>

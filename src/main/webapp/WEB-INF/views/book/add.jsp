@@ -10,7 +10,7 @@
     </style>
 </head>
 <body>
-
+<jsp:include page="../header.jsp"/>
 <h3>Add book</h3>
 
 <form:form method="post" modelAttribute="book">
