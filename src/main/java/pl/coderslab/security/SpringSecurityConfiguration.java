@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.SecurityFilterChain;
+import pl.coderslab.repository.UserRepository;
 
 @Configuration
 class SpringSecurityConfiguration {
@@ -27,7 +28,7 @@ class SpringSecurityConfiguration {
     }
 
     @Bean
-    UserDetailsService userDetailsService() {
-        return new CustomUserDetailsService();
+    UserDetailsService userDetailsService(UserRepository userRepository) {
+        return new CustomUserDetailsService(userRepository);
     }
 }
